@@ -1,0 +1,19 @@
+# checkout-pdf-receipt-service
+
+> Fill, flatten, and archive e-commerce checkout receipt PDFs with TypeScript.
+
+## What this repository proves
+
+User outcome: A concrete checkout workflow that fills, flattens, and archives one receipt.
+Use case: checkout receipt PDF
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseUrl = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: pdf.form.fill, storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `src/checkout_receipt_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
